@@ -8,3 +8,4 @@ Perform SQL analysis for Rockbuster Stealth Entertainment and answer the followi
 - Do sales figures vary between geographic regions?
 
 ## Data Set 
+[Rockbuster Stealth Data](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
