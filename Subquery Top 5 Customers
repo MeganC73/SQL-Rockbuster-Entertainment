@@ -1,0 +1,22 @@
+Create subquery to find out which countries the Top 5 customers in the Rockbuster database live in 
+
+SELECT DISTINCT(D.country) AS customer_country, COUNT(DISTINCT top_5_customers.customer_id AS cnt_top_customer 
+FROM customer A 
+INNER JOIN address B ON A.addres_id = B.address_id 
+INNER JOIN city C ON B.city_id = C.city_id 
+INNER JOIN country D ON C.country_id = D.country_id 
+LEFT JOIN 
+(SELECT A.customer_id, A.first_name, A.last_name, D.country, C.city, SUM(E.amount) AS total_amt_paid 
+FROM customer A
+INNER JOIN address B ON A.addres_id = B.address_id 
+INNER JOIN city C ON B.city_id = C.city_id 
+INNER JOIN country D ON C.country_id = D.country_id
+INNER JOIN payment E ON A.customer_id = E.customer_id 
+WHERE C.city IN ('Aurora','Atlixco','Xintai','Adoni','Dhule (Dhulia)','Kurashiki','Pingxiang','Sivas','Celaya','So Leopoldo') 
+GROUP BY 1,2,4,5 
+ORDER BY total_amt_paid DESC
+LIMIT 5) AS 5_top_customers 
+ON 5_top_customers.country = D.country 
+GROUP BY customer_country 
+ORDER BY cnt_top_customer DESC
+  
