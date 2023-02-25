@@ -9,5 +9,9 @@ Perform SQL analysis for Rockbuster Stealth Entertainment and answer the followi
 - Where are customers with a high lifetime value based?
 - Do sales figures vary between geographic regions?
 
-## Data Set 
+## Data Set and Data Dictionary 
 [Rockbuster Stealth Data](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip) 
+
+[Data Dictionary.pdf](https://github.com/MeganC73/SQL-Rockbuster-Entertainment/files/10831627/Data.Dictionary.pdf)
+
+
