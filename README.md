@@ -14,4 +14,5 @@ Perform SQL analysis for Rockbuster Stealth Entertainment and answer the followi
 
 [Data Dictionary.pdf](https://github.com/MeganC73/SQL-Rockbuster-Entertainment/files/10831627/Data.Dictionary.pdf)
 
-
+## Link to Tableau Geographic Visualization 
+[Revenue Map](https://public.tableau.com/app/profile/megan.carly/viz/RockbusterRevenueCustomerMap/RevenueandCustomersMap?publish=yes)
